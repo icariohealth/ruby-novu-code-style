@@ -1,0 +1,58 @@
+Rails:
+  Enabled: true
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - !ruby/regexp /.*solano.*\.rb$/
+    - !ruby/regexp /.*tddium.*\.rb$/
+    - bin/**/*
+    - client/**/*
+    - config/boot.rb
+    - db/**/*
+    - rgloader/loader.rb
+    - script/**/*
+    - vendor/**/*
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Metrics/LineLength:
+  Max: 110
+  # To make it possible to copy or click on URIs in the code, we allow lines
+  # contaning a URI to be longer than Max.
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+  Exclude:
+    - config/routes.rb # Annotations run long.
+
+Metrics/BlockLength:
+  Exclude:
+  - config/routes.rb
+
+NumericLiterals:
+  Enabled: false
+
+Style/FileName:
+  Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '()'
+    '%I': '()'
+    '%w': '()'
+    '%W': '()'
