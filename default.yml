@@ -35,16 +35,13 @@ Metrics/BlockLength:
 NumericLiterals:
   Enabled: false
 
-Style/FileName:
-  Enabled: false
-
 Rails/HasAndBelongsToMany:
   Enabled: false
 
-Style/RegexpLiteral:
+Style/Documentation:
   Enabled: false
 
-Style/StringLiterals:
+Style/FileName:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
@@ -56,3 +53,6 @@ Style/PercentLiteralDelimiters:
     '%I': '()'
     '%w': '()'
     '%W': '()'
+
+Style/RegexpLiteral:
+  Enabled: false
