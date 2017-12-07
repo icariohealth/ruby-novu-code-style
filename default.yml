@@ -41,7 +41,7 @@ Rails/HasAndBelongsToMany:
 Style/Documentation:
   Enabled: false
 
-Style/FileName:
+Naming/FileName:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
