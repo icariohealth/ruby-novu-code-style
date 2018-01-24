@@ -39,14 +39,15 @@ Now, run:
 $ bundle exec rubocop
 ```
 
-## CodeClimate setup
+## Code Climate setup
 
-For repositories that are tracked in codeclimate add the following at the top of codeclimate.yml
-```
+For repositories that are tracked in Code Climate, add the following at the top of `.codeclimate.yml`:
+
+```yaml
 prepare:
   fetch:
-  - url: "https://raw.githubusercontent.com/novu/ruby-novu-code-style/master/default.yml"
-    path: "default.yml"
+  - url: 'https://raw.githubusercontent.com/novu/ruby-novu-code-style/master/default.yml'
+    path: 'default.yml'
 ```
 
 >NOTE: Any local rules in .rubocop.yml will take precedence over inheriting from a local project file, which will take precedence over inheriting from a gem.
