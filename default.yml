@@ -58,6 +58,9 @@ Style/RegexpLiteral:
   Enabled: false
 
 Rails/SkipsModelValidations:
-  Enabled: true
   Exclude:
+    - spec/**/*
+
+Lint/AmbiguousBlockAssociation:
+    Exclude:
     - spec/**/*
