@@ -56,3 +56,11 @@ Style/PercentLiteralDelimiters:
 
 Style/RegexpLiteral:
   Enabled: false
+
+Rails/SkipsModelValidations:
+  Exclude:
+    - spec/**/*
+
+Lint/AmbiguousBlockAssociation:
+    Exclude:
+    - spec/**/*
