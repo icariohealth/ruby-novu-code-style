@@ -47,7 +47,7 @@ For repositories that are tracked in Code Climate, add the following at the top 
 prepare:
   fetch:
   - url: 'https://raw.githubusercontent.com/novu/ruby-novu-code-style/master/default.yml'
-    path: 'default.yml'
+    path: '.rubocop-https---raw-githubusercontent-com-novu-ruby-novu-code-style-master-default-yml'
 ```
 
 >NOTE: Any local rules in .rubocop.yml will take precedence over inheriting from a local project file, which will take precedence over inheriting from a gem.
