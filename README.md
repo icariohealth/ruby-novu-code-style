@@ -2,6 +2,11 @@
 
 Novu shared rubocop configuration.
 
+## Updating Cops
+
+Open a pull request with the proposed changes and ask for reviews in other teams.
+Remember that cops are ordered alphabetically in `default.yml` and avoid adding paths that only make sense for a particular repository.
+
 ## Installation
 
 Add this line to your application's Gemfile:

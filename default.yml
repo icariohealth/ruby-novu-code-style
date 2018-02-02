@@ -17,6 +17,15 @@ AllCops:
 Layout/DotPosition:
   EnforcedStyle: trailing
 
+Lint/AmbiguousBlockAssociation:
+    Exclude:
+    - spec/**/*
+
+Metrics/BlockLength:
+  Exclude:
+  - config/routes.rb
+  - app/views/api/**/*
+
 Metrics/LineLength:
   Max: 110
   # To make it possible to copy or click on URIs in the code, we allow lines
@@ -28,24 +37,26 @@ Metrics/LineLength:
   Exclude:
     - config/routes.rb # Annotations run long.
 
-Metrics/BlockLength:
-  Exclude:
-  - config/routes.rb
-  - app/views/api/**/*
-
-NumericLiterals:
+Naming/FileName:
   Enabled: false
 
 Rails/HasAndBelongsToMany:
   Enabled: false
 
+Rails/SkipsModelValidations:
+  Exclude:
+    - spec/**/*
+
+Style/CollectionMethods:
+  Enabled: true
+
 Style/Documentation:
   Enabled: false
 
-Naming/FileName:
+Style/FrozenStringLiteralComment:
   Enabled: false
 
-Style/FrozenStringLiteralComment:
+Style/NumericLiterals:
   Enabled: false
 
 Style/PercentLiteralDelimiters:
@@ -57,11 +68,3 @@ Style/PercentLiteralDelimiters:
 
 Style/RegexpLiteral:
   Enabled: false
-
-Rails/SkipsModelValidations:
-  Exclude:
-    - spec/**/*
-
-Lint/AmbiguousBlockAssociation:
-    Exclude:
-    - spec/**/*
