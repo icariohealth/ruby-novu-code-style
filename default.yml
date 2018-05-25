@@ -1,6 +1,4 @@
-Rails:
-  Enabled: true
-
+# Common configuration.
 AllCops:
   TargetRubyVersion: 2.3
   Exclude:
@@ -14,41 +12,12 @@ AllCops:
     - script/**/*
     - vendor/**/*
 
+#################### Layout ################################
+
 Layout/DotPosition:
   EnforcedStyle: trailing
 
-Lint/AmbiguousBlockAssociation:
-    Exclude:
-    - spec/**/*
-
-Metrics/BlockLength:
-  Exclude:
-  - config/routes.rb
-  - app/views/api/**/*
-
-Metrics/LineLength:
-  Max: 110
-  # To make it possible to copy or click on URIs in the code, we allow lines
-  # contaning a URI to be longer than Max.
-  AllowURI: true
-  URISchemes:
-    - http
-    - https
-  Exclude:
-    - config/routes.rb # Annotations run long.
-
-Naming/FileName:
-  Enabled: false
-
-Rails/HasAndBelongsToMany:
-  Enabled: false
-
-Rails/SkipsModelValidations:
-  Exclude:
-    - spec/**/*
-
-Style/CollectionMethods:
-  Enabled: true
+#################### Style #################################
 
 Style/Documentation:
   Enabled: false
@@ -68,3 +37,59 @@ Style/PercentLiteralDelimiters:
 
 Style/RegexpLiteral:
   Enabled: false
+
+#################### Naming ################################
+
+Naming/FileName:
+  Enabled: false
+
+#################### Metrics ###############################
+
+Metrics/AbcSize:
+  Max: 22.5
+
+Metrics/BlockLength:
+  Exclude:
+  - config/routes.rb
+  - app/views/api/**/*
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/CyclomaticComplexity:
+  Max: 9
+
+Metrics/LineLength:
+  Max: 110
+  # The IgnoreCopDirectives option causes the LineLength rule to ignore cop
+  # directives like '# rubocop: enable ...' when calculating a line's length.
+  IgnoreCopDirectives: true
+  Exclude:
+    - config/routes.rb # Annotations run long.
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/ModuleLength:
+  Max: 150
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+#################### Lint ##################################
+
+Lint/AmbiguousBlockAssociation:
+    Exclude:
+    - spec/**/*
+
+#################### Rails #################################
+
+Rails:
+  Enabled: true
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Exclude:
+    - spec/**/*
