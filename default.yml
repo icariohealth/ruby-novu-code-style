@@ -19,6 +19,9 @@ Layout/DotPosition:
 
 #################### Style #################################
 
+Style/CollectionMethods:
+  Enabled: true
+
 Style/Documentation:
   Enabled: false
 
