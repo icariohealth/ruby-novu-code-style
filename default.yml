@@ -7,7 +7,6 @@ AllCops:
     - bin/**/*
     - client/**/*
     - config/boot.rb
-    - db/**/*
     - rgloader/loader.rb
     - script/**/*
     - vendor/**/*
@@ -50,11 +49,14 @@ Naming/FileName:
 
 Metrics/AbcSize:
   Max: 22.5
+  Exclude:
+    - db/**/*
 
 Metrics/BlockLength:
   Exclude:
   - config/routes.rb
   - app/views/api/**/*
+  - db/**/*
 
 Metrics/ClassLength:
   Max: 150
@@ -69,9 +71,12 @@ Metrics/LineLength:
   IgnoreCopDirectives: true
   Exclude:
     - config/routes.rb # Annotations run long.
+    - db/**/*
 
 Metrics/MethodLength:
   Max: 15
+  Exclude:
+    - db/**/*
 
 Metrics/ModuleLength:
   Max: 150
