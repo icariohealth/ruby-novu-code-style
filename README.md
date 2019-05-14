@@ -34,8 +34,9 @@ $ bundle install
 Create a `.rubocop.yml` in the repository with the following configuration:
 
 ```yaml
-inherit_from:
-  - https://raw.githubusercontent.com/novu/ruby-novu-code-style/master/default.yml
+inherit_gem:
+  novu-style:
+    - default.yml
 ```
 
 Now, run:
