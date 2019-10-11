@@ -59,3 +59,9 @@ prepare:
 >NOTE: Any local rules in .rubocop.yml will take precedence over inheriting from a local project file, which will take precedence over inheriting from a gem.
 
 You do not need to include rubocop directly in your application's dependences. Novu-style will include a specific version of `rubocop` that is shared across all projects.
+
+## Changelog
+
+#### 0.5.3
+
+  - Update rubocop to 0.75.0
