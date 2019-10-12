@@ -1,3 +1,5 @@
+require: rubocop-rails
+
 # Common configuration.
 AllCops:
   TargetRubyVersion: 2.3
