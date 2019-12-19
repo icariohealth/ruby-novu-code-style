@@ -62,11 +62,4 @@ You do not need to include rubocop directly in your application's dependences. N
 
 ## Changelog
 
-#### 0.5.4
-
-  - Include rails cops that have been moved to the rubocop-rails gem
-
-
-#### 0.5.3
-
-  - Update rubocop to 0.75.0
+All changes should be logged in CHANGELOG.md. Also make sure to bump the version (version.rb).
