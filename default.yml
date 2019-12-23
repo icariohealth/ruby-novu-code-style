@@ -18,6 +18,15 @@ AllCops:
 Layout/DotPosition:
   EnforcedStyle: trailing
 
+Layout/LineLength:
+  Max: 120
+  # The IgnoreCopDirectives option causes the LineLength rule to ignore cop
+  # directives like '# rubocop: enable ...' when calculating a line's length.
+  IgnoreCopDirectives: true
+  Exclude:
+    - config/routes.rb # Annotations run long.
+    - db/**/*
+
 #################### Style #################################
 
 Style/CollectionMethods:
@@ -65,15 +74,6 @@ Metrics/ClassLength:
 
 Metrics/CyclomaticComplexity:
   Max: 9
-
-Metrics/LineLength:
-  Max: 120
-  # The IgnoreCopDirectives option causes the LineLength rule to ignore cop
-  # directives like '# rubocop: enable ...' when calculating a line's length.
-  IgnoreCopDirectives: true
-  Exclude:
-    - config/routes.rb # Annotations run long.
-    - db/**/*
 
 Metrics/MethodLength:
   Max: 15
