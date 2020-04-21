@@ -2,7 +2,8 @@ require: rubocop-rails
 
 # Common configuration.
 AllCops:
-  TargetRubyVersion: 2.3
+  NewCops: enable
+  TargetRubyVersion: 2.6
   Exclude:
     - !ruby/regexp /.*solano.*\.rb$/
     - !ruby/regexp /.*tddium.*\.rb$/
