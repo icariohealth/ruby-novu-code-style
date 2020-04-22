@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update rubocop to 0.82.x.
 - Update rubocop-rails to 2.5.x
 - Default ruby version to 2.6
+- Remove CodeClimate documentation
 
 ## [0.5.6] - 2019-12-23
 
