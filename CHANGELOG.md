@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Update rubocop to 0.93.0.
+- Update rubocop to 1.4.2
 - Update rubocop-rails to 2.8.1
 
 ## [0.5.7] - 2020-04-21
