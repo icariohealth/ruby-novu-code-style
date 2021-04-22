@@ -93,6 +93,9 @@ Lint/AmbiguousBlockAssociation:
     Exclude:
     - spec/**/*
 
+Lint/SymbolConversion:
+  EnforcedStyle: consistent
+
 #################### Rails #################################
 
 Rails:

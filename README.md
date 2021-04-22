@@ -39,6 +39,8 @@ inherit_gem:
     - default.yml
 ```
 
+Additionally you can add new extensions `rubocop-rspec` and `rubocop-rake` to your project in the local `rubocop.yml` file
+
 Now, run:
 
 ```bash
