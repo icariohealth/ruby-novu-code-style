@@ -1,4 +1,4 @@
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'novu/style/version'
 
@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Novu style guides and shared style configs.'
   spec.homepage      = 'https://github.com/novu/novu-style'
 
+  spec.required_ruby_version = '>= 3.2'
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
@@ -27,11 +28,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rubocop', '~> 1.23.0'
-  spec.add_dependency 'rubocop-rails', '~> 2.12.4'
+  spec.add_dependency 'rubocop', '>= 1.56.3'
+  spec.add_dependency 'rubocop-rails', '~> 2.21.1'
 
-  spec.add_dependency 'rubocop-rake', '~> 0.5.1'
-  spec.add_dependency 'rubocop-rspec', '~> 2.2.0'
+  spec.add_dependency 'rubocop-rake', '~> 0.6.0'
+  spec.add_dependency 'rubocop-rspec', '~> 2.24.0'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake', '~> 10.0'
